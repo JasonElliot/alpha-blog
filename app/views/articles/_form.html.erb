@@ -1,7 +1,7 @@
 <% if @article.errors.any? %>
 <h2>the errors prevented the article from getting created</h2>
   <ul>
-    <% @article.errors.full_message.each do |msg| %>
+    <% @article.errors.full_messages.each do |msg| %>
           <li> <%= msg %>
           </li>
     <% end %>
