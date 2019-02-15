@@ -11,7 +11,7 @@ gem 'rails', '~> 5.2.2'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'jquery-rails'
-gem 'bootstrap-sass', '~> 3.4.1'
+gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -39,8 +39,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  gem 'sqlite3'
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3', '~> 1.3.6'  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
