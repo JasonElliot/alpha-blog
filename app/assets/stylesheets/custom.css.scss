@@ -1,4 +1,4 @@
-
+$navbar-default-bg: black;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -6,17 +6,54 @@
 #logo{
   float: left;
   font-size: 1.7em;
-  color: #FF00FF;
+  color: darkblue;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
 }
 
 #logo:hover {
-  color: #23F4F2;
+  color: #6699cc;
   text-decoration: none;
 }
 
 .center {
   text-align: center;
+}
+.jumbotron{
+    background-image: asset-url('los_angeles_usa_skyscrapers_night_top_view_118099_3840x2400.jpg');
+    background-size: cover;
+    height: 550px;
+}
+.jumbotron h1 {
+  color: darkblue;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+.btn-xlarge{
+  font-size: 1.7em;
+  background-color: black;
+}
+footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+footer a:hover{
+  color: #222;
+}
+footer small{
+  float: left;
+}
+footer ul{
+  float: right;
+  list-style: none;
+}
+footer ul li{
+  float: left;
+  margin-left: 15px;
 }
