@@ -1,2 +1,22 @@
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  color: #FF00FF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #23F4F2;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
