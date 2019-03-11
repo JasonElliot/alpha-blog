@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:edit, :update, :show]
+  before_action :set_user, only: [:edit, :update, :show ]
   before_action :require_same_user, only: [:edit,:update, :destroy]
   before_action :require_admin, only: [:destroy]
   def index
@@ -39,10 +39,11 @@ class UsersController < ApplicationController
   end
 
   def destroy
-   @user = User.find(params[:id])
-   @user.destroy
-   flash[:danger] = "user and all articles deleted"
-   redirect_to user_path
+    @user = User.find(params[:id]) if !@user = User.find(params[:id]).nil?
+    @user.destroy
+     flash[:danger] = "user and all articles deleted"
+     redirect_to user_path
+
   end
 
   private
